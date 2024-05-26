@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PostProcMateral
-  m_Shader: {fileID: -6465566751694194690, guid: 1ae7ef33f63db6341ad1784503be6531,
+  m_Shader: {fileID: -6465566751694194690, guid: de69e73f21236a341917304284781758,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
