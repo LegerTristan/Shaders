@@ -31,6 +31,8 @@ public class PointCloud : MonoBehaviour
     Vector3[] speeds;
 
 
+    bool IsPointCloudValid => speeds != null && speeds.Length > 0 && vertices != null && vertices.Length > 0;
+
     void Start()
     {
         meshFilter = GetComponent<MeshFilter>();
@@ -47,7 +49,7 @@ public class PointCloud : MonoBehaviour
             isDirty=false;
         }
 
-        if(animate)
+        if(animate && IsPointCloudValid)
         {
             MoveVertices();
             meshFilter.sharedMesh.SetVertices(vertices);
